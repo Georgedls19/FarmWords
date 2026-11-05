@@ -351,7 +351,7 @@ function petDraw(){const c=$('pc').getContext('2d');c.clearRect(0,0,48,48);c.dra
  $('pq').onclick=()=>{PM.o={h:'',m:'',f:'',n:''};petDraw()}}
 /* ---------- Firebase (Realtime Database por REST) ---------- */
 /* El maestro pega aquí los datos de su proyecto (ver instrucciones). Si quedan vacíos, el juego funciona igual sin enviar nada. */
-const FB={url:'',apiKey:''};
+const FB={url:'https://farm-words-3da6f-default-rtdb.firebaseio.com/',apiKey:'J7AWTG06nD2qCpd8vOhUryr6MYB4cHCFWwDUd6c3'};
 const FU=()=>FB.url.replace(/\/$/,''),sid=n=>n.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 let cdirty=0;
 function cloud(){if(!FB.url||!P.name||!cdirty)return;cdirty=0;const a=S.ok||0,e=S.er||0;
